@@ -17,7 +17,7 @@ namespace Projekt_Baza
         public int pesel { get; set; }
         public string stanowisko { get; set; }
         public int wiek { get; set; }
-        public List<adress> Adres { get; set; }
+        public List<Adress> Adres { get; set; }
         public BitmapImage obrazek { get; set; }
 
         //[XmlElement("LargeIcon")]
@@ -68,7 +68,7 @@ namespace Projekt_Baza
             obrazek.BeginInit();
             obrazek.UriSource = new Uri(@"C:\Users\szymp\Desktop\screen.png", UriKind.Absolute);
             obrazek.EndInit();
-            Adres = new List<adress>();
+            Adres = new List<Adress>();
         }
         public pracownik()
         {

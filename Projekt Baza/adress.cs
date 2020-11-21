@@ -6,31 +6,31 @@ using System.Threading.Tasks;
 
 namespace Projekt_Baza
 {
-    class adress
+    class Adress
     {
-        public string ulica { get; set; }
-        public string kodpocztowy { get; set; }
-        public string miasto { get; set; }
-        public string dzielnica { get; set; }  //dzielnica/wojewodztwo
-        public string panstwo { get; set; }
+        public string Ulica { get; set; }
+        public string Kodpocztowy { get; set; }
+        public string Miasto { get; set; }
+        public string Dzielnica { get; set; }  //dzielnica/wojewodztwo
+        public string Panstwo { get; set; }
         public bool IsKorespondencyjny;
-        public adress(string ulica, string kodpocztowy, string miasto, string dzielnica, string panstwo,bool IsKorespondencyjny) 
+        public Adress(string ulica, string kodpocztowy, string miasto, string dzielnica, string panstwo,bool IsKorespondencyjny) 
         {
-            this.ulica = ulica;
-            this.kodpocztowy = kodpocztowy;
-            this.miasto = miasto;
-            this.dzielnica = dzielnica;
-            this.panstwo = panstwo;
+            this.Ulica = ulica;
+            this.Kodpocztowy = kodpocztowy;
+            this.Miasto = miasto;
+            this.Dzielnica = dzielnica;
+            this.Panstwo = panstwo;
             this.IsKorespondencyjny = IsKorespondencyjny;
         }
 
-        public adress()
+        public Adress()
         {
-            this.ulica = "Oleska";
-            this.kodpocztowy = "45-320";
-            this.miasto = "Opole";
-            this.dzielnica = "opolskie";
-            this.panstwo = "Polska";
+            this.Ulica = "Oleska";
+            this.Kodpocztowy = "45-320";
+            this.Miasto = "Opole";
+            this.Dzielnica = "opolskie";
+            this.Panstwo = "Polska";
             this.IsKorespondencyjny = true;
         }
     }

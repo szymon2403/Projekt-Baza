@@ -24,9 +24,9 @@ namespace Projekt_Baza
             InitializeComponent();
             mvarOsoba = osoba;
             this.DataContext = mvarOsoba;
-            foreach (adress adres in mvarOsoba.Adres)
+            foreach (Adress adres in mvarOsoba.Adres)
             {
-
+                //ctlTab.Items.Add(new AdresForm(adres));
             }
 
         }
