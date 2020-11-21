@@ -24,5 +24,10 @@ namespace Projekt_Baza
         {
             InitializeComponent();
         }
+
+        private void listapracownikow_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

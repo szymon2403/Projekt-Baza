@@ -7,6 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ListView Name="listapracownikow" MouseDoubleClick="listapracownikow_MouseDoubleClick">
+            <ListView.View>
+                <GridView AllowsColumnReorder="True">
+                    <GridView.Columns>
+                        <GridViewColumn Header="Id" DisplayMemberBinding="{Binding idpracownika}" />
+                        <GridViewColumn Header="Imię" DisplayMemberBinding="{Binding imie}" />
+                        <GridViewColumn Header="Nazwisko" DisplayMemberBinding="{Binding nazwisko}" />
+                        <GridViewColumn Header="PESEL" DisplayMemberBinding="{Binding pesel}" />
+                        <GridViewColumn Header="PESEL" DisplayMemberBinding="{Binding pesel}" />
+                        
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Window>

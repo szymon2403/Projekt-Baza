@@ -14,5 +14,7 @@ namespace Projekt_Baza
         public int pesel { get; set; }
         public string stanowisko { get; set; }
         public int wiek { get; set; }
+        public List<adress> Adres { get; set; }
+
     }
 }
